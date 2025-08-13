@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GB — Steampunk Pixel Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --gold:#E8A93D;
+      --gold-2:#F3C77C;
+      --orange:#C97826;
+      --charcoal:#2B2B2B;
+      --brown:#3A2A1E;
+      --copper:#5A3A1C;
+      --shadow:#0f0f0f;
+      --paper:#191818;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--charcoal);
+      color:#EDE7DB; font-family:'Rajdhani', system-ui, sans-serif;
+      line-height:1.4; overflow-x:hidden;
+      /* subtle pixel grid */
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size:16px 16px, 16px 16px;
+    }
+
+    /* pixel card frame */
+    .pixel-frame{
+      position:relative; background:var(--paper);
+      border:4px solid #1c1b1b;
+      box-shadow:
+        0 0 0 4px var(--brown) inset,
+        0 0 0 8px #0f0e0e inset,
+        0 10px 0 0 #000,
+        0 10px 0 2px #0006,
+        0 16px 24px #000a;
+      border-radius:14px;
+    }
+
+    .bevel{
+      position:relative;
+      background:linear-gradient(180deg, #3a2b1e, #1c1510);
+      border:2px solid #000;
+      box-shadow:0 0 0 2px #4b3627 inset, 0 0 0 6px #1a120c inset;
+    }
+
+    header{
+      position:sticky; top:0; z-index:30;
+      background:radial-gradient(120% 120% at 10% -20%, #3b2b1f, #1a1510 60%);
+      border-bottom:2px solid #000;
+      box-shadow:0 4px 0 #000, 0 10px 20px #000a;
+    }
+
+    .wrap{max-width:1100px; margin:0 auto; padding:18px 20px}
+
+    .brand{
+      display:flex; align-items:center; gap:14px; text-decoration:none;
+    }
+    .brand-mark{
+      width:46px; height:46px; display:grid; place-items:center;
+      background:linear-gradient(180deg, #2d2219, #0f0b08);
+      border:2px solid #000; border-radius:10px; box-shadow:0 0 0 2px #4b3627 inset;
+      font-family:'Press Start 2P', monospace; font-size:16px; color:var(--gold);
+      text-shadow:0 2px 0 #000, 0 0 18px rgba(243,199,124,.35);
+    }
+    .brand-title{font: 700 22px/1 'Bebas Neue', sans-serif; letter-spacing:2px}
+
+    nav{margin-left:auto; display:flex; gap:18px; align-items:center}
+    nav a{
+      text-decoration:none; color:#e7dcc7; font-weight:700; letter-spacing:.04em;
+      padding:10px 14px; border:2px solid #000; border-radius:10px;
+      background:linear-gradient(180deg, #4b3627, #1b140f); box-shadow:0 0 0 2px #6a4a31 inset;
+      transition:transform .08s ease, box-shadow .18s ease;
+    }
+    nav a:hover{ transform:translateY(-2px); box-shadow:0 0 0 2px var(--gold) inset, 0 0 20px rgba(232,169,61,.35)}
+
+    .hero{ position:relative; padding:80px 0 60px }
+
+    .hero-inner{ display:grid; grid-template-columns:1.15fr .85fr; gap:32px; align-items:center }
+
+    .hero h1{
+      font-family:'Bebas Neue', sans-serif; font-size:84px; line-height:.9; margin:0 0 12px;
+      background:linear-gradient(180deg, var(--gold-2), var(--gold)); -webkit-background-clip:text; color:transparent;
+      text-shadow:0 3px 0 #2a1f12, 0 0 24px rgba(243,199,124,.3);
+    }
+    .hero p{ font-size:20px; max-width:50ch; color:#ecd7a6 }
+
+    .cta{
+      display:inline-block; margin-top:18px; padding:14px 22px; font-weight:800; letter-spacing:.06em;
+      color:#1b130a; text-decoration:none; text-transform:uppercase;
+      border:3px solid #000; border-radius:12px; filter: drop-shadow(0 4px 0 #000);
+      background:linear-gradient(180deg, var(--gold-2), var(--gold));
+      box-shadow:0 0 0 3px #6d4a22 inset, 0 0 24px rgba(243,199,124,.5) inset;
+      transition: transform .08s ease, filter .08s ease;
+    }
+    .cta:hover{ transform:translateY(-2px); filter: drop-shadow(0 6px 0 #000) }
+
+    /* Gear art */
+    .gear{
+      width:120px; height:120px; opacity:.9; filter: drop-shadow(0 8px 12px rgba(0,0,0,.6));
+    }
+    .gear.small{ width:70px; height:70px; opacity:.8 }
+    .spin-slow{ animation:spin 18s linear infinite }
+    .spin-mid{ animation:spin 12s linear infinite reverse }
+    @keyframes spin{ to{ transform:rotate(360deg) } }
+
+    /* Feature section */
+    .features{ padding:50px 0 80px }
+    .grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:22px }
+
+    .card{
+      padding:22px; border:2px solid #000; border-radius:16px; background:linear-gradient(180deg, #2d2219, #15100c);
+      box-shadow:0 0 0 2px #4b3627 inset, 0 12px 0 0 #000, 0 18px 26px #000a;
+      transition: transform .12s ease, box-shadow .18s ease;
+    }
+    .card:hover{ transform:translateY(-4px); box-shadow:0 0 0 2px var(--gold) inset, 0 12px 0 0 #000, 0 24px 36px #000c }
+    .card h3{ margin:0 0 8px; font:700 26px/1 'Bebas Neue', sans-serif; letter-spacing:1px; color:var(--gold-2) }
+    .card p{ margin:0; color:#e9d8b4 }
+
+    .divider{ height:2px; background:linear-gradient(90deg, transparent, var(--gold), transparent); margin:36px 0 }
+
+    /* Footer */
+    footer{
+      border-top:2px solid #000; background:linear-gradient(180deg, #1b150f, #100c08);
+      color:#cbb48a; font-size:14px; padding:28px 0; text-align:center
+    }
+
+    /* Responsive */
+    @media (max-width: 950px){ .hero-inner{ grid-template-columns:1fr; text-align:center } .hero p{margin:0 auto} .brand-title{display:none} }
+    @media (max-width: 780px){ .grid{ grid-template-columns:1fr 1fr } }
+    @media (max-width: 520px){ .grid{ grid-template-columns:1fr } .hero h1{font-size:58px} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex; gap:18px; align-items:center">
+      <a class="brand" href="#">
+        <div class="brand-mark">GB</div>
+        <div class="brand-title" style="color:#edd8b0">GEARBOX</div>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <h1>Lorem ipsum dolor</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          <a class="cta" id="download" href="#">Get Started</a>
+          <div class="divider"></div>
+          <div style="display:flex; gap:14px; align-items:center; color:#e1cfa2">
+            <span style="font-weight:700">Palette</span>
+            <span style="width:18px; height:18px; background:var(--gold); display:inline-block; border:2px solid #000; border-radius:4px"></span>
+            <span style="width:18px; height:18px; background:var(--orange); display:inline-block; border:2px solid #000; border-radius:4px"></span>
+            <span style="width:18px; height:18px; background:var(--copper); display:inline-block; border:2px solid #000; border-radius:4px"></span>
+            <span style="width:18px; height:18px; background:var(--charcoal); display:inline-block; border:2px solid #000; border-radius:4px"></span>
+          </div>
+        </div>
+
+        <div class="pixel-frame" style="padding:28px; display:grid; place-items:center;">
+          <!-- Inline SVG gears to avoid external assets -->
+          <svg class="gear spin-slow" viewBox="0 0 100 100" fill="url(#grad)">
+            <defs>
+              <radialGradient id="grad" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="#F3C77C"/>
+                <stop offset="60%" stop-color="#E8A93D"/>
+                <stop offset="100%" stop-color="#5A3A1C"/>
+              </radialGradient>
+            </defs>
+            <path d="M50 12l7 2 5-5 6 3 3 6 7 1 1 7 6 3-1 7 5 5-4 6 3 6-6 4-1 7-7 1-3 6-6-2-5 5-7-2-5 5-6-3-3-6-7-1-1-7-6-3 1-7-5-5 4-6-3-6 6-4 1-7 7-1 3-6 6 2 5-5zM50 30a20 20 0 1 0 0 40 20 20 0 1 0 0-40z"/>
+          </svg>
+          <svg class="gear small spin-mid" viewBox="0 0 100 100" style="position:absolute; right:16px; bottom:12px" fill="url(#grad)">
+            <use href="#tooth"/>
+            <path id="tooth" d="M50 8l6 2 4-4 5 2 2 5 6 1 1 6 5 2-1 5 4 4-3 5 2 5-5 3-1 6-6 1-2 5-5-2-4 4-6-2-4 4-5-2-2-5-6-1-1-6-5-2 1-5-4-4 3-5-2-5 5-3 1-6 6-1 2-5 5 2 4-4zM50 26a16 16 0 1 0 0 32 16 16 0 1 0 0-32z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="wrap">
+        <h2 style="font: 700 38px 'Bebas Neue', sans-serif; letter-spacing:1px; color:var(--gold-2); margin:0 0 18px">What You'll Get</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          
+          </div>
+          <div class="card">
+            <h3>Lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque</p>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="wrap" style="padding-bottom:80px">
+      <div class="bevel pixel-frame" style="padding:22px">
+        <h2 style="font: 700 34px 'Bebas Neue', sans-serif; color:var(--gold-2); margin:0 0 8px">Showcase</h2>
+        <p style="color:#e9d8b4; margin:0 0 16px">Swap these placeholders for your screenshots, sprites, or concept art.</p>
+        <div class="grid" style="grid-template-columns:repeat(3, 1fr)">
+          <div class="pixel-frame" style="aspect-ratio:4/3"></div>
+          <div class="pixel-frame" style="aspect-ratio:4/3"></div>
+          <div class="pixel-frame" style="aspect-ratio:4/3"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> GiggleByte — i am stink</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
