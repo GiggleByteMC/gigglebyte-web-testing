@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GiggleByte Mod List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --gold: #E8A93D;
+            --gold-2: #F3C77C;
+            --orange: #C97826;
+            --charcoal: #2B2B2B;
+            --brown: #3A2A1E;
+            --copper: #5A3A1C;
+            --shadow: #0f0f0f;
+            --paper: #191818;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: var(--charcoal);
+            color: #EDE7DB;
+            font-family: 'Rajdhani', system-ui, sans-serif;
+            line-height: 1.4;
+            overflow-x: hidden;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 16px 16px, 16px 16px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            background: radial-gradient(120% 120% at 10% -20%, #3b2b1f, #1a1510 60%);
+            border-bottom: 2px solid #000;
+            box-shadow: 0 4px 0 #000, 0 10px 20px #000a;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 18px 20px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+        }
+
+        .brand-mark {
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(180deg, #2d2219, #0f0b08);
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 0 2px #4b3627 inset;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 16px;
+            color: var(--gold);
+            text-shadow: 0 2px 0 #000, 0 0 18px rgba(243, 199, 124, .35);
+        }
+
+        .brand-title {
+            font: 700 22px/1 'Bebas Neue', sans-serif;
+            letter-spacing: 2px;
+            color: #edd8b0
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: transform 0.12s ease;
+            display: inline-block;
+        }
+
+        a:hover {
+            transform: scale(0.9);
+        }
+
+
+        main {
+            padding: 50px 0
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 68px;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, var(--gold-2), var(--gold));
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 3px 0 #2a1f12, 0 0 24px rgba(243, 199, 124, .3);
+        }
+
+        .mod-list {
+            background: var(--paper);
+            border: 4px solid #1c1b1b;
+            box-shadow:
+                0 0 0 4px var(--brown) inset,
+                0 0 0 8px #0f0e0e inset,
+                0 10px 0 0 #000,
+                0 10px 0 2px #0006,
+                0 16px 24px #000a;
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .mod-list ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mod-list li {
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            background: linear-gradient(180deg, #2d2219, #15100c);
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 0 2px #4b3627 inset;
+            color: #e9d8b4;
+            font-size: 18px;
+            transition: transform .08s ease, box-shadow .18s ease;
+        }
+
+        .mod-list li:hover {
+            transform: translateX(4px);
+            box-shadow: 0 0 0 2px var(--gold) inset, 0 0 12px rgba(232, 169, 61, .35);
+        }
+
+        footer {
+            border-top: 2px solid #000;
+            background: linear-gradient(180deg, #1b150f, #100c08);
+            color: #cbb48a;
+            font-size: 14px;
+            padding: 28px 0;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap" style="display:flex; gap:18px; align-items:center">
+            <a class="brand" href="#">
+                <div class="brand-mark">GB</div>
+                <div class="brand-title">GiggleByte Mod List</div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <h1>Mod List</h1>
+            <div class="mod-list">
+                <ul>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/extralib">ExtraLib (by Vecoo)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/waystones">Waystones (by BlayTheNinth)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things">Create : Misc &
+                            Things (by To0pa)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry">Create:
+                            Enchantment Industry (by DragonsPlus)</a></li>
+                    <li><a
+                            href="https://www.curseforge.com/minecraft/mc-mods/loot-integrations-moogs-voyager-soaring-end-nether">Loot
+                            Integrations: Moog's Voyager, Soaring, End & Nether Structures (by someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/easy-anvils">Easy Anvils (by Fuzs)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/no-chat-reports">No Chat Reports (by
+                            Aizistral)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/inv-view-forge">Inv View Forge/NeoForge
+                            (by RazorPlay01)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/antixray-forge">AntiXray ((Neo)Forge) (by
+                            drexhd)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/climb-ladders-fast">Climb Ladders Fast
+                            [Fabric/Forge] (by spoorn)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/createaddition">Create Crafts & Additions
+                            (by MRHminer)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/curios">Curios API (Forge/NeoForge) (by
+                            TheIllusiveC4)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/brassamberbattletowers">BrassAmber
+                            BattleTowers (by sMilamber)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/loot-beams">Loot Beams: Relooted! (by
+                            shiroroku)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-herbal-brews">[Let's Do]
+                            HerbalBrews (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/armourers-workshop">Armourer's Workshop
+                            (by RiskyKen)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/easy-piglins">Easy Piglins (by
+                            henkelmax)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-cave-biomes">YUNG's Cave Biomes
+                            (Forge) (by YUNGNICKYOUNG)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-brewery-farm-charm-compat">[Let's
+                            Do] Brewery - Farm&Charm Compat (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/interiors">Create: Interiors (by a0a7)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/silent-lib">Silent Lib (silentlib) (by
+                            SilentChaos512)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/felsic-gear">Felsic Gear (by
+                            TrueRealCursed_Warrior)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-central-kitchen">Create: Central
+                            Kitchen (by DragonsPlus)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-stuff-additions">Create Stuff 'N
+                            Additions (by Furti_Two)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save">Server Performance -
+                            Smooth Chunk Save[Forge/Fabric] (by someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-broken-bad">Create: Broken Bad (by
+                            jetpacker06)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-aquatic-ambitions">Create: Aquatic
+                            Ambitions (by DaviO)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions">Enchantment
+                            Descriptions (by DarkhaxDev)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/caged-mobs">Caged Mobs (by Corgam)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-meadow">[Let's Do] Meadow (by
+                            satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/appleskin">AppleSkin (by squeek502)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/citadel">Citadel (by sbom_xela)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/what-are-they-up-to">What Are They Up To
+                            (Watut) (by Corosus)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/architectury-api">Architectury API (by
+                            shedaniel)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/jei">Just Enough Items (JEI) (by mezz)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/starter-kit">Starter Kit (by Serilum)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-liquid-fuel">Create: Liquid Fuel
+                            (by Forsteri123)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-lilis-lucky-lures">[Let's Do]
+                            Lili's Lucky Lures (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/champions-unofficial">Champions Unofficial
+                            (by PickAID)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-deco">Create Deco (by talrey)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/scaling-health">Scaling Health (by
+                            SilentChaos512)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/rechiseled-create">Rechiseled: Create (by
+                            SuperMartijn642)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/framedblocks">FramedBlocks (by
+                            XFactHD)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/collective">Collective (by Serilum)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/chisels-bits">Chisels & Bits - For Forge
+                            (by AlgorithmX2)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/mss-moogs-soaring-structures">MSS - Moog's
+                            Soaring Structures (by finndog_123)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-furniture">[Let's Do] Furniture
+                            (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/immediatelyfast">ImmediatelyFast (by
+                            RaphiMC)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/packet-fixer">Packet Fixer (by
+                            TonimatasDEV)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create">Create (by simibubi)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/artifacts">Artifacts (by ochotonida)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/balm">Balm (by BlayTheNinth)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/natures-compass">Nature's Compass (by
+                            Chaosyr)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/curio-slot">Curio Slot (by Fisma)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/starlight-forge">Starlight (Forge) (by
+                            Spottedleaf)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/toast-control">Toast Control (by
+                            Shadows_of_Fire)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/free-cam">Freecam (by hashalite)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-addon-corn-expansion">[Let's Do
+                            Addon] Corn Expansion (by Ninjdai)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-beachparty">[Let's Do] Beachparty
+                            (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-compact-exp">Create Compact Exp (by
+                            nocubeyt)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge">FTB Ultimine (Forge)
+                            (by FTB)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/crash-utilities">Crash Utilities (by
+                            Darkere)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/zeta">Zeta (by Vazkii)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat">FTB XMod Compat (by
+                            FTB)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/dcintegration">Discord Integration Forge
+                            (by ErdbeerbaerLP)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/fast-async-world-save-forge-fabric">Fast
+                            Async World Save[Forge/Fabric] (by someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/corpse-x-cosmetic-armor-reworked-compat">Corpse
+                            x Cosmetic Armor Reworked Compat (by Project8gbDeRam)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/achievements-optimizer">Achievements
+                            Optimizer (by big_energy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/terrablender">TerraBlender (Forge) (by
+                            TheAdubbz)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-enchantable-machinery">Create:
+                            Enchantable Machinery (by Cotrin)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/delightful">Delightful (by brnbrd)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/advancement-plaques">Advancement Plaques
+                            [Neo/Forge] (by Grend_G)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat">Simple Voice Chat (by
+                            henkelmax)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/netherportalfix">NetherPortalFix (by
+                            BlayTheNinth)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-industry">Create: The Factory Must
+                            Grow (by Dr_Mango_Tea)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-trading-floor">Create: Trading
+                            Floor (by CakeIsTastyDeveloper)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/bookshelf">Bookshelf (by DarkhaxDev)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked">Cosmetic Armor
+                            Reworked (by LainMI)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/spark">spark (by Iucko)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/cupboard">Cupboard (by someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks">Sophisticated
+                            Backpacks (by P3pp3rF1y)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/iceberg">Iceberg [Neo/Forge] (by
+                            Grend_G)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/geckolib">GeckoLib (by Gecko)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/modernfix">ModernFix (by embeddedt)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/timeoutfixes">TimeoutFixes (by
+                            Corosus)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/nethers-delight">Nether's Delight (by
+                            lumpazl)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/chat-heads">Chat Heads (by dzwdz)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/attributefix">AttributeFix (by
+                            DarkhaxDev)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-farm-charm">[Let's Do] Farm &
+                            Charm (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/better-ping-display">Better Ping Display
+                            (by Quintinity)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks">Crafting Tweaks (by
+                            BlayTheNinth)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge">FTB Library (Forge) (by
+                            FTB)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-addon-compat">[Let's Do Addon]
+                            Compat (by Ninjdai)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/mns-moogs-nether-structures">MNS - Moog's
+                            Nether Structures (by finndog_123)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/chipped">Chipped (by terrariumearth)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/toms-storage">Tom's Simple Storage Mod (by
+                            tom54541)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-winery">Create: Winery
+                            [Forge/NeoForge] (by robinfrt)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-additional-recipes">Create:
+                            Additional Recipes (by TheGuy790)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/puzzles-lib">Puzzles Lib (by Fuzs)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-diesel-generators">Create: Diesel
+                            Generators (by george8188262)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-emi-compat">[Let's Do Addon] EMI
+                            Compat (by pandaismyname1)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/river-treasures">River Treasures (by
+                            TrueRealCursed_Warrior)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/seasonal-lets-do">Seasonal Let's Do (by
+                            xhyrom)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures">MES - Moog's End
+                            Structures (by finndog_123)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-contraption-terminals">Create
+                            Contraption Terminals (by tom54541)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures">Fusion
+                            (Connected Textures) (by SuperMartijn642)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/corpse">Corpse (by henkelmax)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/searchables">Searchables (by
+                            Jaredlll08)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-vinery">[Let's Do] Vinery (by
+                            satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/controlling">Controlling (by
+                            Jaredlll08)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures">MVS - Moog's
+                            Voyager Structures (by finndog_123)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-bakery">Legacy: [Let's Do] Bakery
+                            (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture">MrCrayfish's
+                            Furniture Mod: Refurbished (by MrCrayfish)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/better-advancements">Better Advancements
+                            (by way2muchnoise)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/no-more-trampling">No More Trampling (by
+                            Mazurex)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/quark">Quark (by Vazkii)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/baguettelib">BaguetteLib (by
+                            Project8gbDeRam)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/bellsandwhistles">Create: Bells & Whistles
+                            (by a0a7)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/framework">Framework (by MrCrayfish)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/slice-and-dice">Create Slice & Dice (by
+                            possible_triangle)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/selene">Moonlight Lib (by
+                            MehVahdJukaar)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/overloaded-armor-bar">Overloaded Armor Bar
+                            (by tfarecnim)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay">Fast Leaf Decay (by
+                            olafskiii)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/oceans-delight">Ocean's Delight (by
+                            scouter567)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/area-effect-clouds-3d">Area Effect Clouds
+                            3D (by Insane96)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/glitchcore">GlitchCore (by TheAdubbz)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/fast-paintings">Fast Paintings (by
+                            MehVahdJukaar)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/corpse-x-curios-api-compat">Corpse x
+                            Curios API Compat (by Project8gbDeRam)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/stellarity">Stellarity (by kohara)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d">Skin Layers 3D
+                            (Fabric/Forge) (by tr7zw)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ai-improvements">AI Improvements (by
+                            QueenOfMissiles)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-encased">Create Encased (by
+                            iglee42)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/emojiful">Emojiful (by Buuz135)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/modern-fullbright">Modern Fullbright (by
+                            awesome_hippo)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks">Mouse Tweaks (by YaLTeR)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/shiny-drops">Shiny Drops (by
+                            TrueRealCursed_Warrior)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/infinite-lava">Infinite Lava (by
+                            Discusser)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/fix-gpu-memory-leak">fix GPU memory
+                            leak[Forge/Fabric] (by someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/new-death-messages">New Death Messages (by
+                            NeonCranberries)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-addon-structures">[Let's Do Addon]
+                            Structures (by Ninjdai)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/loot-integrations">Loot Integrations (by
+                            someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-core">Sophisticated Core (by
+                            P3pp3rF1y)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/athena">Athena (by terrariumearth)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/easy-shulker-boxes">Easy Shulker Boxes (by
+                            Fuzs)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-api">YUNG's API (Forge/NeoForge) (by
+                            YUNGNICKYOUNG)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/copycats">Create: Copycats+ (by
+                            Lysine)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/too-fast">Too Fast (by Noobanidus)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-connected">Create: Connected (by
+                            Lysine)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/rechiseled">Rechiseled (by
+                            SuperMartijn642)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/entityculling">Entity Culling Fabric/Forge
+                            (by tr7zw)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge">FTB Chunks (Forge) (by
+                            FTB)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/loot-integrations-stellarity">Loot
+                            Integrations: Stellarity (by someaddon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-wildernature">[Let's
+                            Do] WilderNature (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/coroutil">CoroUtil (by Corosus)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/comforts">Comforts (Fabric/Forge/Quilt)
+                            (by TheIllusiveC4)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight">Farmer's Delight (by
+                            vectorwing)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/grieflogger">GriefLogger (by DAQEM)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/majrusz-library">Majrusz Library (by
+                            Majrusz17)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge">Kotlin for Forge (by
+                            thedarkcolour)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/numismatics">Create: Numismatics (by
+                            IThundxr)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/necronomicon">Necronomicon API (by
+                            ElocinDev)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/clumps">Clumps (by Jaredlll08)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/catalogue">Catalogue (by MrCrayfish)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-camping">[Let's Do] Camping (by
+                            satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/placebo">Placebo (by Shadows_of_Fire)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/serene-seasons">Serene Seasons (by
+                            TheAdubbz)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/explorers-compass">Explorer's Compass (by
+                            Chaosyr)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/terralith">Terralith (by Starmute)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/embeddium">Embeddium (by
+                            FiniteReality)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/do-api">[Let's Do] API (by
+                            Cristelknight)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge">FTB Teams (Forge) (by
+                            FTB)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/villager-trading-plus">Villager Trading
+                            Plus (by cassiancc)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-bloomingnature">[Let's Do]
+                            BloomingNature (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/construction-wand">Construction Wand (by
+                            ThetaDev)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/enders-delight">Ender's Delight (by
+                            Furti_Two)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/reeves-furniture">Furnitury - Vanilla
+                            Styled Furniture (by Glythex)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/just-zoom">Just Zoom (by Keksuccino)</a>
+                    </li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lootr">Lootr (Forge & NeoForge) (by
+                            Noobanidus)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/quark-delight">Quark Delight (by
+                            nocubeyt)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib">SuperMartijn642's
+                            Core Lib (by SuperMartijn642)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/konkrete">Konkrete [Forge/NeoForge] (by
+                            Keksuccino)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/crawl-on-demand">Crawl on Demand (by
+                            Talilon)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">Resourceful Lib (by
+                            ThatGravyBoat)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib">SuperMartijn642's
+                            Config Lib (by SuperMartijn642)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/easy-magic">Easy Magic (by Fuzs)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/polymorph">Polymorph (Fabric/Forge/Quilt)
+                            (by TheIllusiveC4)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/pick-up-notifier">Pick Up Notifier (by
+                            Fuzs)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-candlelight-farm-charm-compat">[Let's
+                            Do] Candlelight - Farm&Charm Compat (by satisfy)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/fast-item-frames">Fast Item Frames (by
+                            Fuzs)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator-forge">Chunky
+                            (Forge/NeoForge) (by pop4959)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/ferritecore">FerriteCore ((Neo)Forge) (by
+                            malte0811)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/hypertubes">Create: Hypertubes (by
+                            Rokzin)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/anvil-never-too-expensive">Anvil Never Too
+                            Expensive (by tinytransfem)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft">Immersive Aircraft
+                            [Fabric/Forge] (by Conczin)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/carry-on">Carry On (by Tschipp)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/progressive-bosses">Progressive Bosses (by
+                            Insane96)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/insanelib">InsaneLib (by Insane96)</a>
+                    </li>
+                    <li><a
+                            href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks-create-integration">Sophisticated
+                            Backpacks Create Integration (by P3pp3rF1y)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/tschipcrafts-dynamic-lights-mod">Dynamic
+                            Lights [Server] [Fabric/Quilt/Forge/NeoForge] (by Tschipcraft)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/cloth-config">Cloth Config API
+                            (Fabric/Forge/NeoForge) (by shedaniel)</a></li>
+                    <li><a href="https://www.curseforge.com/minecraft/mc-mods/jade">Jade 🔍 (by Snownee)</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">© <span id="y"></span> GiggleByte</div>
+    </footer>
+
+    <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
